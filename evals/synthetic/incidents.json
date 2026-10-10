@@ -1,0 +1,162 @@
+[
+  {
+    "incident_id": "INC-101",
+    "service": "checkout-service",
+    "title": "High error rate (500) post deployment v2.4.1",
+    "error_rate_pct": 34.2,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-102",
+    "service": "auth-gateway",
+    "title": "Token verification timeout spike",
+    "error_rate_pct": 18.5,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-2"
+  },
+  {
+    "incident_id": "INC-103",
+    "service": "payment-api",
+    "title": "Database connection pool exhausted",
+    "error_rate_pct": 45.0,
+    "expected_category": "DATABASE_CONNECTION_EXHAUSTION",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-104",
+    "service": "search-indexer",
+    "title": "Pod CrashLoopBackOff OOMKilled",
+    "error_rate_pct": 12.0,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-2"
+  },
+  {
+    "incident_id": "INC-105",
+    "service": "notification-worker",
+    "title": "Queue lag exceeding 50,000 messages",
+    "error_rate_pct": 4.1,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-3"
+  },
+  {
+    "incident_id": "INC-106",
+    "service": "inventory-api",
+    "title": "Postgres replica read query latency spike",
+    "error_rate_pct": 22.0,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-2"
+  },
+  {
+    "incident_id": "INC-107",
+    "service": "orders-db-proxy",
+    "title": "Connection refused - max pool reached",
+    "error_rate_pct": 38.0,
+    "expected_category": "DATABASE_CONNECTION_EXHAUSTION",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-108",
+    "service": "recommendations-engine",
+    "title": "Inference buffer memory saturation",
+    "error_rate_pct": 15.4,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-2"
+  },
+  {
+    "incident_id": "INC-109",
+    "service": "shipping-calculator",
+    "title": "Upstream carrier API rate limiting",
+    "error_rate_pct": 8.5,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-3"
+  },
+  {
+    "incident_id": "INC-110",
+    "service": "user-profile-svc",
+    "title": "Redis cache eviction storm & OOM",
+    "error_rate_pct": 29.8,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-111",
+    "service": "billing-scheduler",
+    "title": "Nightly batch job memory spike",
+    "error_rate_pct": 14.0,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-2"
+  },
+  {
+    "incident_id": "INC-112",
+    "service": "cdn-cache-purger",
+    "title": "Invalid TLS handshake errors",
+    "error_rate_pct": 6.2,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-3"
+  },
+  {
+    "incident_id": "INC-113",
+    "service": "fraud-detection-svc",
+    "title": "Critical latency degradation on transaction eval",
+    "error_rate_pct": 31.0,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-114",
+    "service": "graphql-gateway",
+    "title": "Downstream query depth explosion & memory crash",
+    "error_rate_pct": 42.1,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-115",
+    "service": "analytics-collector",
+    "title": "Kafka partition rebalance delay",
+    "error_rate_pct": 5.0,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-3"
+  },
+  {
+    "incident_id": "INC-116",
+    "service": "customer-support-webhook",
+    "title": "Zendesk API 502 Bad Gateway response",
+    "error_rate_pct": 9.3,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-3"
+  },
+  {
+    "incident_id": "INC-117",
+    "service": "session-store-api",
+    "title": "Database connection saturation in cluster",
+    "error_rate_pct": 27.5,
+    "expected_category": "DATABASE_CONNECTION_EXHAUSTION",
+    "expected_severity": "SEV-1"
+  },
+  {
+    "incident_id": "INC-118",
+    "service": "image-resizer",
+    "title": "VMMem heap exhaustion on large TIFF upload",
+    "error_rate_pct": 19.0,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-2"
+  },
+  {
+    "incident_id": "INC-119",
+    "service": "email-dispatcher",
+    "title": "SES bounce rate warning threshold hit",
+    "error_rate_pct": 7.4,
+    "expected_category": "APPLICATION_EXCEPTION",
+    "expected_severity": "SEV-3"
+  },
+  {
+    "incident_id": "INC-120",
+    "service": "catalog-search-v3",
+    "title": "Elasticsearch cluster memory threshold exceeded",
+    "error_rate_pct": 36.5,
+    "expected_category": "MEMORY_LIMIT_EXCEEDED",
+    "expected_severity": "SEV-1"
+  }
+]
